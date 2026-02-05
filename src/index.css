@@ -1,0 +1,148 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.app-container{
+  display:flex;
+  min-height:100vh;
+  background:#f4f6f8;
+  color:#000;
+}
+
+.sidebar{
+  width:230px;
+  background:#1f2933;
+  color:#fff;
+  padding:20px;
+}
+
+.sidebar h4{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+  padding:12px;
+  border-radius:6px;
+}
+
+.sidebar li:hover{
+  background:#374151;
+  cursor:pointer;
+}
+
+.main-content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.navbar-custom{
+  height:60px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  border-bottom:1px solid #ddd;
+}
+
+.dashboard{
+  padding:30px;
+}
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.dashboard-card{
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  transition:0.3s;
+  color:#000;
+}
+
+.dashboard-card:hover{
+  background:#2563eb;
+  color:#fff;
+  transform:translateY(-5px);
+}
+
+.active-card{
+  background:#2563eb;
+  color:#fff;
+}
+
+.content-area{
+  margin-top:40px;
+  background:#ffffff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  color:#000;
+}
+
+.content-area h3{
+  margin-bottom:15px;
+}
+
+.content-area ul{
+  list-style:none;
+}
+
+.content-area li{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+
+.dark{
+  background:#0f172a;
+  color:#fff;
+}
+
+.dark .main-content{
+  background:#0f172a;
+}
+
+.dark .navbar-custom{
+  background:#020617;
+  border-color:#1e293b;
+  color:#fff;
+}
+
+.dark .dashboard-card{
+  background:#1e293b;
+  color:#fff;
+}
+
+.dark .dashboard-card:hover{
+  background:#2563eb;
+}
+
+.dark .active-card{
+  background:#2563eb;
+}
+
+.dark .content-area{
+  background:#1e293b;
+  color:#fff;
+}
+
+.dark .content-area li{
+  border-color:#334155;
+}
